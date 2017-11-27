@@ -5,10 +5,10 @@ var PLUGIN_NAME = 'MyCordovaPlugin';
 
 var MyCordovaPlugin = {
   echo: function(phrase, cb) {
-    exec(cb, null, PLUGIN_NAME, 'echo', [phrase]);
+    console.log("echo");
   },
-  getDate: function(cb) {
-    exec(cb, null, PLUGIN_NAME, 'getDate', []);
+  getDate: function() {
+    console.log("getDate");
   }
 };
 
