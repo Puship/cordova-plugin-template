@@ -10,22 +10,8 @@
     <repo>https://github.com/Puship/puship-plugin</repo>
     <issue>https://github.com/Puship/puship-plugin/issues</issue>
 
-	
-    <!-- android -->
-    <platform name="android">
-      <js-module src="www/plugin.js" name="plugin">
-        <runs/>
+	<js-module src="www/plugin.js" name="MyCordovaPlugin">
+		<clobbers target="MyCordovaPlugin" />
+	</js-module>
 
-        <!-- This is the window variable name you want, like window.MyCordovaPlugin -->
-        <clobbers target="MyCordovaPlugin" />
-      </js-module>
-    </platform>
-
-    <!-- ios -->
-    <platform name="ios">
-        <js-module src="www/plugin.js" name="plugin">
-            <runs/>
-            <clobbers target="MyCordovaPlugin" />
-        </js-module>
-    </platform>
 </plugin>
