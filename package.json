@@ -1,12 +1,23 @@
 {
   "name": "puship-plugin",
   "version": "1.0.0",
+  "description": "Plugin for register device on Puship service notification",
   "cordova": {
     "id": "puship-plugin",
-    "platforms": [
-      "android",
-      "ios",
-    ]
+    "platforms": []
   },
-  "description": "A starting point for a Puship Plugin"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Puship/puship-plugin.git"
+  },
+  "keywords": [
+    "Push",
+    "ecosystem:cordova"
+  ],
+  "author": "SoftRay S.r.l.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Puship/puship-plugin/issues"
+  },
+  "homepage": "https://github.com/Puship/puship-plugin#readme"
 }

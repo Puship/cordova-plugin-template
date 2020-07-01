@@ -4,14 +4,30 @@
     id="puship-plugin"
     version="1.0.0">
     <name>Puship Plugin</name>
-    <description></description>
+    <description>This plugin is for use with Puship.com, it's quickly enable support for Push Notifications on phonegap applications</description>
     <license>MIT</license>
     <keywords>Push</keywords>
     <repo>https://github.com/Puship/puship-plugin</repo>
     <issue>https://github.com/Puship/puship-plugin/issues</issue>
 
-	<js-module src="www/plugin.js" name="MyCordovaPlugin">
-		<clobbers target="MyCordovaPlugin" />
+	<js-module src="www/plugin.js" name="Puship">
+		<clobbers target="Puship" />
 	</js-module>
-
+	<engines>
+		<engine name="cordova" version=">=7.1.0"/>
+		<engine name="cordova-android" version=">=7.1.0"/>
+		<engine name="cordova-ios" version=">=4.5.0"/>
+	</engines>
+    <dependency id="cordova-plugin-device"/>
+	<dependency id="phonegap-plugin-push"/>
+	<dependency id="cordova-plugin-geolocation"/>
+    <platform name="android">
+		<resource-file src="res/sounds" target="res/raw"/>
+    </platform>
+    <platform name="ios">
+        <resource-file src="res/sounds/" target="sounds"/>
+        <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
+            <string>need location access to receive geolocated notifications</string>
+        </config-file>
+    </platform>
 </plugin>
