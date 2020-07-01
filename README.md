@@ -43,22 +43,9 @@ The plugin can be installed using the Phonegap command line interface:
 phonegap local plugin add https://github.com/Puship/PushPlugin.git
 ```
 
-### Plugman
+## How to activate
 
-The plugin is based on [plugman](https://github.com/apache/cordova-plugman) and can be installed using the Plugman command line interface:
-
-```sh
-plugman install --platform [PLATFORM] --project [TARGET-PATH] --plugin [PLUGIN-PATH]
-
-where
-	[PLATFORM] = ios, android or wp8
-	[TARGET-PATH] = path to folder containing your phonegap project
-	[PLUGIN-PATH] = path to folder containing this plugin
-```
-
-##How to use:
-
-Go to puship.com and create your Free account. Configure your application from dashboard an then add highlighted code to your index.js:
+Go to [Puship.com](https://www.puship.com) and create your Free account. Configure your application from dashboard an then add highlighted code to your index.js:
 
 
 ```diff
@@ -104,3 +91,8 @@ Go to puship.com and create your Free account. Configure your application from d
 Then run your app and start send push notifications!
 
 ...and yes, this is lovely all!
+
+## Other tips
+
+1) at this link you can find a [complete example](https://github.com/Puship/phonegap-puship-start) that use all library methods
+2) a this link you can find official [library documentation](https://www.puship.com/documentation/common-library-documentation/)
