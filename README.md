@@ -60,52 +60,45 @@ where
 
 Go to puship.com and create your Free account. Configure your application from dashboard an then add highlighted code to your index.js:
 
-```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
 
 ```diff
-onDeviceReady: function() {
-        this.receivedEvent('deviceready');
-		
-		push = PushNotification.init({
-			android: {
-			},
-			browser: {
-				pushServiceURL: 'http://push.api.phonegap.com/v1/push'
-			},
-			ios: {
-				alert: "true",
-				badge: "true",
-				sound: "true"
-			},
-			windows: {}
-		});
-		
-		push.on('registration', (data) => {
-			+ var appCode = "YOUR-PUSHIP-APP-CODE"; // I.E.: puship_id = "h1mCVGaP9dtGnwG"
-			+ Puship.Register(data.registrationId, appCode);
-		});
-
-		push.on('notification', (data) => {
-			alert(JSON.stringify(data));
-			// data.message,
-			// data.title,
-			// data.count,
-			// data.sound,
-			// data.image,
-			// data.additionalData
-		});
-
-		push.on('error', (e) => {
-			alert(e.message);
-		});
-		
-    }
+#	onDeviceReady: function() {
+#        this.receivedEvent('deviceready');
+#		
+#		push = PushNotification.init({
+#			android: {
+#			},
+#			browser: {
+#				pushServiceURL: 'http://push.api.phonegap.com/v1/push'
+#			},
+#			ios: {
+#				alert: "true",
+#				badge: "true",
+#				sound: "true"
+#			},
+#			windows: {}
+#		});
+#		
+#		push.on('registration', (data) => {
++			var appCode = "YOUR-PUSHIP-APP-CODE"; // I.E.: puship_id = "h1mCVGaP9dtGnwG"
++			Puship.Register(data.registrationId, appCode);
+#		});
+#
+#		push.on('notification', (data) => {
++			alert(JSON.stringify(data));
+#			// data.message,
+#			// data.title,
+#			// data.count,
+#			// data.sound,
+#			// data.image,
+#			// data.additionalData
+#		});
+#
+#		push.on('error', (e) => {
+#			alert(e.message);
+#		});
+#		
+#    }
 ```
 
 Then run your app and start send push notifications!
