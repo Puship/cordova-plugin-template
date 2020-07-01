@@ -61,7 +61,7 @@ where
 Go to puship.com and create your Free account. Configure your application from dashboard an then add highlighted code to your index.js:
 
 
-```
+``` diff
 onDeviceReady: function() {
         this.receivedEvent('deviceready');
 		
@@ -80,10 +80,8 @@ onDeviceReady: function() {
 		});
 		
 		push.on('registration', (data) => {
-			```diff
-			- var appCode = "YOUR-PUSHIP-APP-CODE"; // I.E.: puship_id = "h1mCVGaP9dtGnwG"
-			- Puship.Register(data.registrationId, appCode);
-			```
+			+ var appCode = "YOUR-PUSHIP-APP-CODE"; // I.E.: puship_id = "h1mCVGaP9dtGnwG"
+			+ Puship.Register(data.registrationId, appCode);
 		});
 
 		push.on('notification', (data) => {
@@ -99,7 +97,6 @@ onDeviceReady: function() {
 		push.on('error', (e) => {
 			alert(e.message);
 		});
-		
 		
     }
 ```
