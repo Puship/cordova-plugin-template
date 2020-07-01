@@ -20,7 +20,7 @@ Is based on [phonegap-plugin-push](https://github.com/phonegap/phonegap-plugin-p
 
 ## Installation
 
-Normally it is sufficient to add the plugin as indicated below, but if you have special needs you can first manually install the phonegap-plugin-push and configure it as spelled at the [following link]https://github.com/phonegap/phonegap-plugin-push/blob/master/README.md), and then resume from here. Since the phonegap-plugin-push is already installed it will not be installed again.
+Normally it is sufficient to add the plugin as indicated below, but if you have special needs you can first manually install the phonegap-plugin-push and configure it as spelled at the [following link](https://github.com/phonegap/phonegap-plugin-push/blob/master/README.md), and then resume from here. Since the phonegap-plugin-push is already installed it will not be installed again.
 
 
 ### Cordova
@@ -61,7 +61,7 @@ where
 Go to puship.com and create your Free account. Configure your application from dashboard an then add highlighted code to your index.js:
 
 
-``` diff
+```diff
 onDeviceReady: function() {
         this.receivedEvent('deviceready');
 		
