@@ -56,10 +56,17 @@ where
 	[PLUGIN-PATH] = path to folder containing this plugin
 ```
 
-##<a name="automatic_installation"></a>How to use:
+##How to use:
 
 Go to puship.com and create your Free account. Configure your application from dashboard an then add highlighted code to your index.js:
 
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
 
 ```diff
 onDeviceReady: function() {
