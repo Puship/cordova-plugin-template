@@ -107,5 +107,5 @@ Then run your app and start send push notifications!
 
 ## Other tips
 
-1) at this link you can find a [complete example](https://github.com/Puship/phonegap-puship-start) that use all library methods
+1) at this link you can find a [complete example](https://github.com/Puship/cordova-puship-start) that use all library methods
 2) a this link you can find official [library documentation](https://www.puship.com/documentation/common-library-documentation/)
