@@ -1,6 +1,6 @@
 {
   "name": "puship-plugin",
-  "version": "1.0.0",
+  "version": "2.0.1",
   "description": "Plugin for register device on Puship service notification",
   "cordova": {
     "id": "puship-plugin",
@@ -12,7 +12,11 @@
   },
   "keywords": [
     "Push",
-    "ecosystem:cordova"
+    "Puship",
+    "Notification",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
   ],
   "author": "SoftRay S.r.l.",
   "license": "MIT",

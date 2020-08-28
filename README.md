@@ -6,7 +6,7 @@
 
 This plugin is for use with [Puship.com](https://www.puship.com), it's quickly enable support for Push Notifications on cordova and phonegap applications.
 
-Is based on [phonegap-plugin-push](https://github.com/phonegap/phonegap-plugin-push) plugin and add only few resources for manage remote push notifications on Puship server(s):
+Is based on [phonegap-plugin-push](https://github.com/phonegap/phonegap-plugin-push), So, you can use all his methods for manage the push notifications. It and add only few resources for manage remote push notifications on Puship server(s):
 1) one javascript library
 2) many sounds
 3) plugin dependencies: - [cordova-plugin-device](https://github.com/apache/cordova-plugin-device)
@@ -41,6 +41,19 @@ The plugin can be installed using the Phonegap command line interface:
 
 ```sh
 phonegap local plugin add https://github.com/Puship/PushPlugin.git
+```
+
+### Plugman
+
+The plugin is based on [plugman](https://github.com/apache/cordova-plugman) and can be installed using the Plugman command line interface:
+
+```sh
+plugman install --platform [PLATFORM] --project [TARGET-PATH] --plugin [PLUGIN-PATH]
+
+where
+	[PLATFORM] = ios or android
+	[TARGET-PATH] = path to folder containing your phonegap project
+	[PLUGIN-PATH] = path to folder containing this plugin
 ```
 
 ## How to activate
